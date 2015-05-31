@@ -1,0 +1,170 @@
+/* for presentations
+
+div#menubar-container {
+  width: 100%;
+}
+div#menubar div.navbar {
+  margin-bottom: 0px;
+}
+
+div#notebook_panel {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+div#notebook {
+  font-size: 22px;
+  line-height: 1.25em;
+  border-top: 0px;
+  pre {
+    line-height: 1.125em;
+  }
+}
+
+.rendered_html li {
+  line-height: 1.25em;
+}
+
+/* the real stuff */
+
+/* disable pager
+  only use this if you have also disabled the pager in Python,
+  (`%load_ext print_page` from github.com/minrk/ipython_extensions)
+  or never use ? or ??
+*/
+
+div#pager_splitter {
+  display: none;
+  height: 0px;
+}
+div#pager {
+  display: none;
+}
+
+.command_mode_icon:before {
+    /* command-mode jet, thanks Paul! */
+    content: "\f0fb";
+}
+
+div.inner_cell {
+  padding-right: 14ex;
+}
+div.cell.selected {
+/*  background-color: #efefef;*/
+}
+
+div.cell.selected div.inner_cell {
+  background-color: #fff;
+}
+
+.command_mode div.cell {
+/*  border: 1px solid transparent;*/
+}
+
+div.cell.selected.command_mode .prompt, .command_mode div.cell.selected .prompt {
+/*  background-color: #efefef;*/
+}
+
+div.cell.selected.edit_mode, .edit_mode div.cell.selected {
+  background-color: #ded;
+}
+
+div.cell {
+/*  border: 1px solid transparent !important;*/
+}
+
+.command_mode div.cell div.input_area, div.cell.edit_mode div.text_cell_input {
+  background-color: #f4f4f4;
+}
+.edit_mode, div.cell div.input_area, div.cell.edit_mode div.text_cell_input {
+  background-color: #fff;
+}
+
+div#notebook {
+/*    font-family: Century, Baskerville, "Adobe Garamond Pro", "Minion Pro", serif;*/
+}
+
+.ui-widget {
+  font-family: Avenir, Century, Verdana, Arial, sans-serif;
+}
+
+body {
+  /* sans-serif fonts I like */
+  font-family: "Proxima Nova", proxima-nova, "Avenir Next", Avenir, "Century Gothic", Optima, "Frutiger LT Std", "Univers LT Std", sans-serif;
+  /* serif fonts I like */
+/*  font-family: Century, Baskerville, "Adobe Garamond Pro", "Minion Pro", serif;*/
+}
+
+div.CodeMirror {
+  font-family: "Source Code Pro", source-code-pro, "Anonymous Pro", Consolas, Inconsolata, monospace;
+/*  background-color: white;*/
+}
+
+div.text_cell_render {
+  color: #333333;
+}
+
+.rendered_html h1, .rendered_html h2, .rendered_html h3, .rendered_html h4, .rendered_html h5 {
+/*  line-height: 1em;*/
+/*  margin-top: 16px;*/
+/*  margin-bottom: 16px;*/
+/*  border-bottom: 1px solid #ccc;*/
+}
+
+.text_cell_render img {
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  display: block;*/
+}
+
+div.text_cell_render {
+/*  margin-left: 76px;*/
+/*  padding-right: 76px;*/
+}
+
+.code_cell + .text_cell {
+/*  border-top: 1px solid #ccc*/
+}
+
+.rendered_html .MathJax_Display {
+/*    text-align: left !important;*/
+}
+
+/* iOS 7 playing */
+
+.btn {
+  border-radius: 0px !important;
+}
+
+body.notebook-body {
+  background-color: #aaa;
+}
+
+div#header {
+/*  background: none;*/
+}
+
+div#header-container {
+  background-color: white;
+  border-radius: 0px 0px 4px 4px;
+}
+div#textedit-container {
+/*  background-color: white;*/
+}
+div#notebook-container {
+  background-color: white;
+  box-shadow: 0px 8px 24px #555;
+  padding-top: 15ex;
+/*  padding: 15ex 15ex 15ex 0px;*/
+/*  padding-top: 48px;*/
+/*  padding-right: 48px;*/
+}
+@media (min-width: 1200px) {
+  div#notebook-container {
+    width: 940px;
+  }
+}
+div.header-bar {
+/*  display: none;*/
+}
