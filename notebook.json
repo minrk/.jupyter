@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "widgets/notebook/js/extension": true
+  }
+}
