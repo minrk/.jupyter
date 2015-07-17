@@ -4,7 +4,7 @@ require(['notebook/js/cell', 'codemirror/keymap/sublime'], function (cell) {
     cell.Cell.options_default.cm_config.keyMap = 'sublime';
 });
 
-require(['base/js/namespace', 'base/js/events'], function (IPython, events) {
+require(['base/js/namespace', 'base/js/events', 'base/js/utils'], function (IPython, events, utils) {
 $([IPython.events]).on("notebook_loaded.Notebook", function () {
     console.log("load");
     IPython.notebook.default_cell_type = 'above';
@@ -13,9 +13,9 @@ $([IPython.events]).on("notebook_loaded.Notebook", function () {
 //
 // // when doing presentations, I hode the header and toolbar
 // $([IPython.events]).on("app_initialized.NotebookApp", function () {
-    console.log("init");
+    // console.log("init");
     // load the gist and toc extensions
-    IPython.load_extensions("gist", "toc");
+    utils.load_extensions("gist", "toc");
     
     // I have special CSS that only applies to the notebook
     $('body').addClass('notebook-body');
