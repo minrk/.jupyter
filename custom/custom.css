@@ -48,7 +48,7 @@ div#pager {
 }
 
 div.inner_cell {
-  padding-right: 14ex;
+  margin-right: 14ex;
 }
 div.cell.selected {
 /*  background-color: #efefef;*/
