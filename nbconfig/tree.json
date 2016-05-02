@@ -1,1 +1,6 @@
-{"NewNotebookWidget": {"default_kernel": "python3"}}
+{
+  "load_extensions": {
+    "ipyparallel/main": true,
+    "editor-tabs": true
+  }
+}

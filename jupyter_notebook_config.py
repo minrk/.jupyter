@@ -596,6 +596,3 @@ c.NotebookManager.notebook_dir = c.NotebookApp.notebook_dir = os.path.expanduser
 # save.  This can also be set with the short `--script` flag.
 # c.FileNotebookManager.save_script = False
 
-# The directory to use for notebooks.
-# c.FileNotebookManager.notebook_dir = u'/Users/minrk/.ipython'
-c.NotebookApp.server_extensions.extend(['ipyparallel.nbextension'])
