@@ -3,5 +3,10 @@
     "cm_config": {
       "keyMap": "sublime"
     }
+  },
+  "load_extensions": {
+    "livereveal/main": true,
+    "gist": true,
+    "nbextension-scratchpad/main": true
   }
 }
